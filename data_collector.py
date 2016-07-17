@@ -7,7 +7,7 @@ import paho.mqtt.client as mqtt
 import db
 
 # ----- Global config variables -----
-MQTT_HOST = '192.168.99.100'#'mosquitto'
+MQTT_HOST = 'mosquitto'
 MQTT_PORT = 1883
 MQTT_TOPIC = 'pygotham'
 MQTT_CLIENT_ID = 'data_collector'
