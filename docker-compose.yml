@@ -1,0 +1,35 @@
+mosquitto:
+  image: toke/mosquitto
+  ports:
+    - "1883:1883"
+    - "9001:9001"
+
+#db:
+#  volumes:
+#    - ./schema.sql:/schema.sql
+#  image: postgres:9.5
+#  ports:
+#    - "5431:5432"
+
+#collector:
+#  build: .
+#  command: "python data_collector.py"
+#  volumes:
+#    - .:/app
+#  env_file:
+#   - ./.env
+#  links:
+#    - mosquitto
+#    - db
+
+#flask:
+#  build: .
+#  command: "python flask_app.py"
+#  env_file:
+#   - ./.env
+#  ports:
+#    - "8080:8080"
+#  volumes:
+#    - .:/app
+#  links:
+#    - db

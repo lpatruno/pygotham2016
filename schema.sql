@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS sensor_data (
+	id SMALLSERIAL PRIMARY KEY,
+    data TEXT NOT NULL
+);
