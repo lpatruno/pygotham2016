@@ -11,8 +11,6 @@ protocol. In order to simplify the installation of these dependencies, I use Doc
 to run the application within containers. In order to build the project run 
 ```docker-compose build``` 
 in the root directory. To create the database, run 
-```docker-compose start db``` followed by 
-```./create_db.sh```
+`docker-compose start db` followed by `./create_db.sh`
 . To launch the application, run
-```docker-compose up```
-. 
+`docker-compose up`. 
